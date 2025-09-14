@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial</title>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+    --orange: #7f00ff;
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+    .btn {
+        display: inline-block;
+        background: #7f00ff;
+        color: #fff;
+        padding: .6rem 3rem;
+        border: .2rem solid var(--black);
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: all .2s linear;
+    }
+
+    .btn:hover {
+        background: rgba(255, 165, 0, .2);
+        color: #3d535f;
+    }
+
+
+    .btn-small {
+        padding: .5rem 2rem; /* Adjust the padding for smaller size */
+        font-size: 1.4rem; /* Adjust the font size for smaller size */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #7f00ff;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .scrollable-container {
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+        padding: 8px 20px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.3s ease;
+        color: #333;
+    }
+
+    p:last-child {
+        border-bottom: none;
+    }
+
+    p:hover {
+        background-color: #f0f0f0;
+    }
+
+    .header {
+        background-color: #7f00ff;
+        color: #fff;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .scrollable-container .header h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer {
+        background-color: #7f00ff;
+        padding: 10px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 18px;
+    }
+    
+
+</style>
+</head>
+<body>
+
+<h1> Tutorial </h1>
+<div class="content">
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+
+<div class="scrollable-container">
+    <div class="header">
+        <h2><strong>HTML</strong></h2>
+    </div>
+    <p>
+        HTML, which stands for HyperText Markup Language, is the standard markup language for creating web pages. It defines the
+        structure and content of a web page using a variety of tags and attributes. Below are the fundamental elements of HTML:
+    </p>
+    <P>
+        HTML Document Structure: Every HTML document should begin with a document type declaration (
+        <!DOCTYPE html>) followed by the <html> element, which contains all other elements on the page.
+            
+    </P>
+
+</div>
+
+<div class="scrollable-container">
+    <div class="header">
+        <h2>Basic JavaScript (questions)</h2>
+    </div>
+    
+</div>
+
+<div class="footer">
+    <p>Thank You.</p>
+</div>
+
+</body>
+</html>

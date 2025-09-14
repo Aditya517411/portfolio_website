@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mock Test - CSS, JavaScript, HTML</title>
+<style>
+ /*  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+    --orange: #7f00ff;
+}
+*/
+
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+    .btn {
+        display: inline-block;
+        background: #7f00ff;
+        color: #fff;
+        padding: .6rem 3rem;
+        border: .2rem solid var(--black);
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: all .2s linear;
+    }
+
+    .btn:hover {
+        background: rgba(255, 165, 0, .2);
+        color: #3d535f;
+    }
+
+
+    .btn-small {
+        padding: .5rem 2rem; /* Adjust the padding for smaller size */
+        font-size: 1.4rem; /* Adjust the font size for smaller size */
+    }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #7f00ff, pink);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+ 
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .incorrect {
+    color: #ff0000;
+  }
+
+
+  /* Additional CSS for form button */
+  input[type="button"] {
+  background-color: #7f00ff;
+    background-color: ; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Cursor style */
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  input[type="button"]:hover {
+    background-color: #4b0082 ; /* Darker green background on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Mock Test - CSS, JavaScript, HTML</h1>
+  <div class="content">
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+  
+  <form id="quizForm">
+  
+    <div class="question">
+      <p>1. What does CSS stand for?</p>
+      <input type="radio" name="q1" value="a"> Cascading Style Sheets<br>
+      <input type="radio" name="q1" value="b"> Computer Style Sheets<br>
+      <input type="radio" name="q1" value="c"> Colorful Style Sheets<br>
+    </div>
+
+    <div class="question">
+      <p>2. Which HTML tag is used to define an unordered list?</p>
+      <input type="radio" name="q2" value="a"> &lt;ul&gt;<br>
+      <input type="radio" name="q2" value="b"> &lt;ol&gt;<br>
+      <input type="radio" name="q2" value="c"> &lt;li&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>3. What is the correct CSS syntax for making all the paragraphs red?</p>
+      <input type="radio" name="q3" value="a"> p {color: red;}<br>
+      <input type="radio" name="q3" value="b"> p {text-color: red;}<br>
+      <input type="radio" name="q3" value="c"> p {font-color: red;}<br>
+    </div>
+
+    <div class="question">
+      <p>4. Which built-in method returns the length of the string?</p>
+      <input type="radio" name="q4" value="a"> length()<br>
+      <input type="radio" name="q4" value="b"> size()<br>
+      <input type="radio" name="q4" value="c"> index()<br>
+    </div>
+
+    <div class="question">
+      <p>5. What is the correct JavaScript syntax for creating a new array?</p>
+      <input type="radio" name="q5" value="a"> var colors = [];<br>
+      <input type="radio" name="q5" value="b"> var colors = {};<br>
+      <input type="radio" name="q5" value="c"> var colors = ();<br>
+    </div>
+
+    <div class="question">
+      <p>6. What does the "DOM" stand for in JavaScript?</p>
+      <input type="radio" name="q6" value="a"> Document Object Model<br>
+      <input type="radio" name="q6" value="b"> Design Object Model<br>
+      <input type="radio" name="q6" value="c"> Data Object Model<br>
+    </div>
+
+    <div class="question">
+      <p>7. Which HTML attribute is used to define inline styles?</p>
+      <input type="radio" name="q7" value="a"> style<br>
+      <input type="radio" name="q7" value="b"> class<br>
+      <input type="radio" name="q7" value="c"> font<br>
+    </div>
+
+    <div class="question">
+      <p>8. How do you create a function in JavaScript?</p>
+      <input type="radio" name="q8" value="a"> function:myFunction()<br>
+      <input type="radio" name="q8" value="b"> function myFunction()<br>
+      <input type="radio" name="q8" value="c"> function = myFunction()<br>
+    </div>
+
+    <div class="question">
+      <p>9. What is the correct way to comment out code in JavaScript?</p>
+      <input type="radio" name="q9" value="a"> /* This is a comment */<br>
+      <input type="radio" name="q9" value="b"> // This is a comment<br>
+      <input type="radio" name="q9" value="c"> &lt;!-- This is a comment --&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>10. Which property is used to change the background color of an element in CSS?</p>
+      <input type="radio" name="q10" value="a"> color<br>
+      <input type="radio" name="q10" value="b"> background-color<br>
+      <input type="radio" name="q10" value="c"> bgcolor<br>
+    </div>
+
+    <div class="question">
+      <p>11. What does the "src" attribute specify in an HTML &lt;img&gt; tag?</p>
+      <input type="radio" name="q11" value="a"> The source of the image<br>
+      <input type="radio" name="q11" value="b"> The style of the image<br>
+      <input type="radio" name="q11" value="c"> The size of the image<br>
+    </div>
+
+    <div class="question">
+      <p>12. How do you add a comment in HTML?</p>
+      <input type="radio" name="q12" value="a"> &lt;!-- This is a comment --&gt;<br>
+      <input type="radio" name="q12" value="b"> // This is a comment<br>
+      <input type="radio" name="q12" value="c"> /* This is a comment */<br>
+    </div>
+
+    <div class="question">
+      <p>13. How do you define a JavaScript function named "myFunction"?</p>
+      <input type="radio" name="q13" value="a"> function myFunction()<br>
+      <input type="radio" name="q13" value="b"> function:myFunction()<br>
+      <input type="radio" name="q13" value="c"> function = myFunction()<br>
+    </div>
+
+    <div class="question">
+      <p>14. How do you declare a JavaScript variable?</p>
+      <input type="radio" name="q14" value="a"> var carName;<br>
+      <input type="radio" name="q14" value="b"> variable carName;<br>
+      <input type="radio" name="q14" value="c"> v carName;<br>
+    </div>
+
+    <div class="question">
+      <p>15. What does the "href" attribute specify in an HTML &lt;a&gt; tag?</p>
+      <input type="radio" name="q15" value="a"> The URL of the link<br>
+      <input type="radio" name="q15" value="b"> The style of the link<br>
+      <input type="radio" name="q15" value="c"> The heading of the link<br>
+    </div>
+
+    <div class="question">
+      <p>16. How do you add a background color for the whole page in CSS?</p>
+      <input type="radio" name="q16" value="a"> body {background-color: red;}<br>
+      <input type="radio" name="q16" value="b"> page {background-color: red;}<br>
+      <input type="radio" name="q16" value="c"> html {background-color: red;}<br>
+    </div>
+
+    <div class="question">
+      <p>17. How do you call a function named "myFunction" in JavaScript?</p>
+      <input type="radio" name="q17" value="a"> call myFunction()<br>
+      <input type="radio" name="q17" value="b"> myFunction()<br>
+      <input type="radio" name="q17" value="c"> call function myFunction()<br>
+    </div>
+
+    <div class="question">
+      <p>18. What does the "type" attribute specify in an HTML &lt;script&gt; tag?</p>
+      <input type="radio" name="q18" value="a"> The type of scripting language<br>
+      <input type="radio" name="q18" value="b"> The size of the script<br>
+      <input type="radio" name="q18" value="c"> The style of the script<br>
+    </div>
+
+    <div class="question">
+      <p>19. How do you create a hyperlink in HTML?</p>
+      <input type="radio" name="q19" value="a"> &lt;a href="url"&gt;link text&lt;/a&gt;<br>
+      <input type="radio" name="q19" value="b"> &lt;link src="url"&gt;text&lt;/link&gt;<br>
+      <input type="radio" name="q19" value="c"> &lt;href src="url"&gt;text&lt;/href&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>20. What is the correct way to include JavaScript code in HTML?</p>
+      <input type="radio" name="q20" value="a"> &lt;script&gt;...&lt;/script&gt;<br>
+      <input type="radio" name="q20" value="b"> &lt;javascript&gt;...&lt;/javascript&gt;<br>
+      <input type="radio" name="q20" value="c"> &lt;code&gt;...&lt;/code&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>21. What is the correct way to comment out code in CSS?</p>
+      <input type="radio" name="q21" value="a"> /* This is a comment */<br>
+      <input type="radio" name="q21" value="b"> // This is a comment<br>
+      <input type="radio" name="q21" value="c"> &lt;!-- This is a comment --&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>22. Which HTML element is used to define important text?</p>
+      <input type="radio" name="q22" value="a"> &lt;strong&gt;<br>
+      <input type="radio" name="q22" value="b"> &lt;important&gt;<br>
+      <input type="radio" name="q22" value="c"> &lt;bold&gt;<br>
+    </div>
+
+    <div class="question">
+      <p>23. What is the correct JavaScript syntax to change the content of the HTML element below?
+        &lt;p id="demo"&gt;This is a demonstration.&lt;/p&gt;</p>
+      <input type="radio" name="q23" value="a"> document.getElementById("demo").innerHTML = "Hello World!";<br>
+      <input type="radio" name="q23" value="b"> document.getElement("p").innerHTML = "Hello World!";<br>
+      <input type="radio" name="q23" value="c"> #demo.innerHTML = "Hello World!";<br>
+    </div>
+
+    <div class="question">
+      <p>24. Which CSS property is used to change the text color of an element?</p>
+      <input type="radio" name="q24" value="a"> color<br>
+      <input type="radio" name="q24" value="b"> text-color<br>
+      <input type="radio" name="q24" value="c"> font-color<br>
+    </div>
+
+    <div class="question">
+      <p>25. How do you add a background color for the whole page in CSS?</p>
+      <input type="radio" name="q25" value="a"> body {background-color: red;}<br>
+      <input type="radio" name="q25" value="b"> page {background-color: red;}<br>
+      <input type="radio" name="q25" value="c"> html {background-color: red;}<br>
+    </div>
+
+    <div class="question">
+      <p>26. What is the correct way to write a JavaScript array?</p>
+      <input type="radio" name="q26" value="a"> var colors = ["red", "green", "blue"];<br>
+      <input type="radio" name="q26" value="b"> var colors = "red", "green", "blue";<br>
+      <input type="radio" name="q26" value="c"> var colors = {"red", "green", "blue"};<br>
+    </div>
+
+    <div class="question">
+      <p>27. How do you add a comment in JavaScript?</p>
+      <input type="radio" name="q27" value="a"> // This is a comment<br>
+      <input type="radio" name="q27" value="b"> &lt;!-- This is a comment --&gt;<br>
+      <input type="radio" name="q27" value="c"> /* This is a comment */<br>
+    </div>
+
+    <div class="question">
+      <p>28. Which CSS property is used to change the font size of an element?</p>
+      <input type="radio" name="q28" value="a"> font-size<br>
+      <input type="radio" name="q28" value="b"> text-size<br>
+      <input type="radio" name="q28" value="c"> font-height<br>
+    </div>
+
+    <div class="question">
+      <p>29. How do you create a function in JavaScript?</p>
+      <input type="radio" name="q29" value="a"> function myFunction()<br>
+      <input type="radio" name="q29" value="b"> create function myFunction()<br>
+      <input type="radio" name="q29" value="c"> new function myFunction()<br>
+    </div>
+
+    <div class="question">
+      <p>30. Which of the following is NOT a valid JavaScript data type?</p>
+      <input type="radio" name="q30" value="a"> Undefined<br>
+      <input type="radio" name="q30" value="b"> Boolean<br>
+      <input type="radio" name="q30" value="c"> Character<br>
+    </div>
+    
+    <input type="button" value="Submit" onclick="checkAnswers()">
+  
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+function checkAnswers() {
+  const answers = {
+    q1: "a", q2: "a", q3: "a", q4: "a", q5: "a", q6: "a", q7: "a", q8: "b", q9: "a", q10: "b",
+    q11: "a", q12: "a", q13: "a", q14: "a", q15: "a", q16: "a", q17: "b", q18: "a", q19: "a", q20: "a",
+    q21: "a", q22: "a", q23: "a", q24: "a", q25: "a", q26: "a", q27: "a", q28: "a", q29: "a", q30: "c"
+  };
+
+  let score = 0;
+  let incorrect = [];
+
+  for (const question in answers) {
+    const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+    if (selectedAnswer) {
+      if (selectedAnswer.value === answers[question]) {
+        score++;
+      } else {
+        incorrect.push(question);
+      }
+    }
+  }
+
+  const totalQuestions = Object.keys(answers).length;
+  const resultText = `You scored ${score} out of ${totalQuestions}.`;
+  let resultHTML = `<p>${resultText}</p>`;
+  
+  if (incorrect.length > 0) {
+    resultHTML += "<p>You answered the following questions incorrectly:</p>";
+    incorrect.forEach(question => {
+      const questionNumber = question.substr(1);
+      resultHTML += `<p class="incorrect">Question ${questionNumber}</p>`;
+    });
+  }
+
+  document.getElementById("result").innerHTML = resultHTML;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #7f00ff, pink);
+
+  color: #fff;
+}
+
+.contact-section {
+  padding: 40px;
+/* background-color: rgba(26, 26, 26, 0.8);*/
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 80px;
+
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 70%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-section form input::placeholder,
+.contact-section form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-section form button {
+  width: 50%;
+  padding: 15px;
+  background-color: #7f00ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+.contact-section form button:hover {
+  background-color: #4b0082;
+}
+
+.error-message {
+  color: #ff3333;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+
+
+
+
+
+    /* Import FontAwesome library */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Style for the button */
+.home-button {
+  background-color: #7f00ff;
+  color: #ffffff;
+  border: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.home-button:hover {
+  background-color: #4b0082;
+}
+
+/* Style for the icon */
+.home-button i {
+  margin-right: 5px;
+}
+
+
+
+</style>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "gKvcVnNwt3OBkITJF",
+      });
+   })();
+</script>
+</head>
+<body>
+
+<div class="contact-section">
+    <h2>Contact Me</h2>
+    
+    <form id="contact-form" action="#" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        <div class="error-message" id="error-message"></div>
+    </form>
+</div>
+  
+<button class="home-button">
+  <a href="index.html" class="home-button">
+  <i class="fas fa-house"></i> Home
+</a>
+</button>
+<script>
+     document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Get form data
+        var formData = {
+            name: this.name.value,
+            email: this.email.value,
+            message: this.message.value
+        };
+
+        // Send the email
+        emailjs.send("service_13dlmvv", "template_v7lfdpi", formData)
+            .then(function(response) {
+                alert("Message sent successfully!");
+                console.log("SUCCESS", response);
+            }, function(error) {
+                alert("Message sending failed!");
+                console.log("FAILED", error);
+            });
+
+        // Clear the form fields
+        this.reset();
+    });
+    </script>
+    
+
+
+</body>
+</html>

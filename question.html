@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Section</title>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+    --orange: #7f00ff;
+}
+
+
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+    .btn {
+        display: inline-block;
+        background: #7f00ff;
+        color: #fff;
+        padding: .6rem 3rem;
+        border: .2rem solid var(--black);
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
+        transition: all .2s linear;
+    }
+
+    .btn:hover {
+        background: rgba(255, 165, 0, .2);
+        color: #3d535f;
+    }
+
+
+    .btn-small {
+        padding: .5rem 2rem; /* Adjust the padding for smaller size */
+        font-size: 1.4rem; /* Adjust the font size for smaller size */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #7f00ff;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .scrollable-container {
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+        padding: 8px 20px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.3s ease;
+        color: #333;
+    }
+
+    p:last-child {
+        border-bottom: none;
+    }
+
+    p:hover {
+        background-color: #f0f0f0;
+    }
+
+    .header {
+        background-color: #7f00ff;
+        color: #fff;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .scrollable-container .header h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer {
+        background-color: #7f00ff;
+        padding: 10px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 18px;
+    }
+    
+
+</style>
+</head>
+<body>
+
+<h1>Questions</h1>
+<div class="content">
+        <a href="index.html" class="btn">Home</a>
+    </div>
+
+<div class="scrollable-container">
+    <div class="header">
+        <h2>Basic HTML (questions)</h2>
+    </div>
+    
+    <p>1. Create a simple HTML form with fields for name, email, and a submit button.</p>
+    <p>2. Build a navigation bar using an unordered list (&lt;ul&gt;) with at least three links.</p>
+    <p>3. Design a webpage layout using HTML and CSS, with a header, sidebar, main content area, and footer.</p>
+    <p>4. Embed an external video from YouTube into an HTML page.</p>
+    <p>5. Implement a responsive image gallery using HTML and CSS.</p>
+    <p>6. Create a table displaying student names, IDs, and grades.</p>
+    <p>7. Develop a simple HTML page with a login form and a registration link.</p>
+    <p>8. Build a dropdown menu using HTML and CSS.</p>
+    <p>9. Design a webpage with an embedded Google Map.</p>
+    <p>10. Implement a simple HTML page with a list of FAQ (Frequently Asked Questions) and answers.</p>
+    <p>11. Develop a webpage with a contact form that sends emails upon submission (you may need server-side scripting for this).</p>
+    <p>12. Create a webpage that includes an iframe displaying content from another website.</p>
+</div>
+
+<div class="scrollable-container">
+    <div class="header">
+        <h2>Basic CSS (questions)</h2>
+    </div>
+    <p>1. Create a CSS rule to style all `<code>&lt;h1&gt;</code>` elements to have a font size of 24 pixels and text color of blue.</p>
+    <p>2. Style a `<code>&lt;div&gt;</code>` element with a class of "container" to have a background color of light gray, a width of 80%, and centered horizontally on the page.</p>
+    <p>3. Write CSS code to create a navigation bar with a horizontal layout, where each navigation item (`<code>&lt;li&gt;</code>`) is displayed inline and has a padding of 10 pixels.</p>
+    <p>4. How would you make an image with the class "logo" responsive, so that it scales proportionally with the size of the viewport?</p>
+    <p>5. Style a button with the class "btn-primary" to have a background color of green, white text color, and a padding of 8 pixels.</p>
+    <p>6. Create a CSS animation that rotates an element continuously.</p>
+    <p>7. How would you hide an element from the page using CSS?</p>
+    <p>8. Write CSS to create a three-column layout where each column takes up an equal width and has a border around it.</p>
+    <p>9. How can you style every other row of a table to have a different background color using CSS?</p>
+    <p>10. Style a `<code>&lt;form&gt;</code>` element with a class of "contact-form" to have a width of 80%, centered horizontally, and a border around it.</p>
+    <p>11. Create a CSS rule to make the text of links change color when hovered over.</p>
+    <p>12. How can you create a fixed navigation bar at the top of the page that remains visible as the user scrolls down?</p>
+</div>
+
+<div class="scrollable-container">
+    <div class="header">
+        <h2>Basic JavaScript (questions)</h2>
+    </div>
+    <p>1. Write a program to find the area and circumference of a circle.</p>
+    <p>2. Write a JavaScript program to find the square root of a number. Here the number is entered by the user. [Use the Math object with the method <code>Math.sqrt</code> for square root and <code>prompt</code> method to input data]</p>
+    <p>3. Write a program to pick the greatest number among three numbers entered by the user.</p>
+    <p>4. Write a program to input a number and determine if it is even or odd. [Use <code>prompt</code> for input and the <code>%</code> operator to get the remainder]</p>
+    <p>5. Write a program to input your name and age using a form and determine whether you are eligible to vote or not. [Use function and <code>onclick</code> event]</p>
+    <p>6. Write a program to perform the following operations using a switch structure:  - If you enter A+, it says you have obtained grade A+.  - If you enter A, it says you have obtained grade A.  - If you enter B+, it says you have obtained grade B+.  - If you enter B, it says you have obtained grade B.  - If you enter any other value/character, it says you have obtained another grade.</p>
+    <p>7. Write a program to print the factorial value of a number.</p>
+    <p>8. Write a program to print the multiplication table of a number. Use function.</p>
+    <p>9. Write a program to reverse a string. [Use a loop from its length-1 to 0 and print it]</p>
+    <p>10. An array contains multiple strings. Print them in reverse order. [Use <code>array.reverse()</code> method].</p>
+    <p>11. Write a program to insert a string “We are learning JS” via form object <code>getElementById()</code> method. Use paragraph with id.</p>
+    <p>12. Input your name and grade using a form. Validate this with a message ‘This field is required’, using <code>onclick()</code> event.</p>
+    <p>13. Write any two paragraphs in your HTML page. Now write a program using jQuery to hide those written paragraphs as you click on them.</p>
+    <p>14. Use jQuery to create an alert message for a button.</p>
+</div>
+
+<div class="footer">
+    <p>Thank You.</p>
+</div>
+
+</body>
+</html>
